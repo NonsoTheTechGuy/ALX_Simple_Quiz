@@ -12,10 +12,10 @@ function checkAnswer() {
 
     if(userAnswer.value === correctAnswer) {
         feedback.textContent = "correct! well done";
-        // feedback.style.color = "green";
+        feedback.style.color = "green";
     } else {
         feedback.textContent = "That's Incorrect, Try again!.";
-        // feedback.style.color = "red";
+        feedback.style.color = "red";
     }
 }
 
