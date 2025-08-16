@@ -4,18 +4,18 @@ function checkAnswer(){
     const userAnswer = document.querySelector('input[name="answer"]:checked');
     const feedback = document.getElementById('feedback');
 
-    if(!userAnswer){
-        feedback.textContent = "Please select an answer";
+    if(!userAnswer) {
+        feedback.textContent = "Please select an answer.";
         feedback.style.color = "orange"
-        return
+        return;
     }
 
-    if(userAnswer === correctAnswer){
+    if(userAnswer.value === correctAnswer) {
         feedback.textContent = "correct! well done";
-        feedback.style.color = "green";
+        // feedback.style.color = "green";
     } else {
         feedback.textContent = "That's Incorrect, Try again!.";
-        feedback.style.color = "red";
+        // feedback.style.color = "red";
     }
 }
 
