@@ -1,7 +1,7 @@
-function checkAnswer(){
+function checkAnswer() {
     const correctAnswer = "4";
     // Get the selected answer (radio button)
-    const userAnswer = document.querySelector('input[name="answer"]:checked');
+    const userAnswer = document.querySelector('input[name="quiz"]:checked');
     const feedback = document.getElementById('feedback');
 
     if(!userAnswer) {
